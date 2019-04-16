@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+<head>
+<!-- <head profile="http://dublincore.org/documents/2008/08/04/dc-html/"> -->
+<!-- Validator is saying profile is obsolete. Used https://nsteffel.github.io/dublin_core_generator/generator_nq.html -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +15,8 @@
     <meta name="DC.Date" content="2019-04-15">
     <meta name="DC.Type" content="Text">
     <meta name="DC.Type" content="Image">
-    <link rel="DC.Source" href="http://gbsoft.ca/">
+    <!-- <link rel="DC.Source" href="http://gbsoft.ca/"> -->
+    <!-- Validator is saying DC.Source is not a registered keyword. Used https://nsteffel.github.io/dublin_core_generator/generator_nq.html -->
     <meta name="DC.Language" content="en-US">
     <meta name="DC.Coverage" content="Parry Sound, Ontario">
     <link href="css/normalize.css" rel="stylesheet"/>
@@ -52,7 +55,7 @@
         
     </header>
     <main role="main">
-        <section id="partners" aria-label="partnersHeading">
+        <section id="partners" aria-labelledby="partnersHeading">
             <h3 id="partnersHeading">
                 Partners
             </h3>
@@ -66,7 +69,7 @@
                 <li role="listitem">
                     <a href="http://www.antamedia.com/" title="Link to Antamedia Software Products" role="link">
                         Proud Reseller of
-                        <img src="images/Antamedia-Logo2 sm.png" alt="Proud Reseller of Antamedia Software Products"/>
+                        <img src="images/Antamedia-Logo2sm.png" alt="Proud Reseller of Antamedia Software Products"/>
                     </a>
                 </li>
                 <li role="listitem">
@@ -77,7 +80,7 @@
                 </li>
             </ul>
         </section>
-        <section id="content" aria-label="contentHeading">
+        <section id="content" aria-labelledby="contentHeading">
             <h2 id="contentHeading">Welcome, and thank you for visiting Georgian Bay Software!</h2>
             <p>We provide Information Technology services to small and medium sized business, government and educational centres. With our Computer, Networking, Software and Web expertise, you need not look any further than Georgian Bay Software</p>
             <img src="images/readers_choice.jpg" aria-labelledby="rcAwardsHeading" title="The deck is stacked in your favour, when you call Georgian Bay Software" alt="Card table with Reader's Choice Awards as cards." />
