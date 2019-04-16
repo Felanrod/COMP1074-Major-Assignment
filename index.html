@@ -19,73 +19,73 @@
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
-<body>
-    <header itemscope itemtype="http://schema.org/ComputerStore">
-        <a href="index.html">
+<body aria-labelledby="siteName" aria-describedby="siteDesc">
+    <header itemscope itemtype="http://schema.org/ComputerStore" role="banner">
+        <a href="index.html" role="link">
             <img src="images/logo.jpg" alt="Georgian Bay Software Logo">
         </a>
         <div id="midRightHeader">
             <div id="topHalf">
                 <div id="titleDesc">
-                    <h1 itemprop="name">Georgian Bay Software</h1>
-                    <h2 itemprop="description">Your Computer and Networking Specialists</h2>
+                    <h1 id="siteName" itemprop="name">Georgian Bay Software</h1>
+                    <h2 id="siteDesc" itemprop="description">Your Computer and Networking Specialists</h2>
                 </div>
                 <p>Store Hours: <span itemprop="openingHours" content="Mo - Fr 08:30-17:30">Monday to Friday 8:30am-5:30pm</span></p>
             </div>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" role="link">Home</a>
                     </li>
                     <li>
-                        <a href="http://www.gbsoft.ca/ProductsServices.php">Products & Services</a>
+                        <a href="http://www.gbsoft.ca/ProductsServices.php" role="link">Products & Services</a>
                     </li>
                     <li>
-                        <a href="http://www.gbsoft.ca/TechTalk.php">Tech Talk</a>
+                        <a href="http://www.gbsoft.ca/TechTalk.php" role="link">Tech Talk</a>
                     </li>
                     <li>
-                        <a href="http://www.gbsoft.ca/About.php">About/Contact Us</a>
+                        <a href="http://www.gbsoft.ca/About.php" role="link">About/Contact Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
         
     </header>
-    <main>
-        <section id="partners">
-            <h3>
+    <main role="main">
+        <section id="partners" aria-label="partnersHeading">
+            <h3 id="partnersHeading">
                 Partners
             </h3>
-            <ul>
-                <li>
+            <ul aria-labelledby="partnersHeading" role="list">
+                <li role="listitem">
                     <img src="images/apple.jpg" alt="Authorized Service Provider for Apple"/>
                 </li>
-                <li>
+                <li role="listitem">
                     <img src="images/AVGReseller_logoSM.png" alt="AVG Gold Reseller"/>
                 </li>
-                <li>
-                    <a href="http://www.antamedia.com/" title="Link to Antamedia Software Products">
+                <li role="listitem">
+                    <a href="http://www.antamedia.com/" title="Link to Antamedia Software Products" role="link">
                         Proud Reseller of
                         <img src="images/Antamedia-Logo2 sm.png" alt="Proud Reseller of Antamedia Software Products"/>
                     </a>
                 </li>
-                <li>
-                    <a href="http://www.ontarioelectronicstewardship.ca/" title="Link to Ontario Electronic Stewardship">
+                <li role="listitem">
+                    <a href="http://www.ontarioelectronicstewardship.ca/" title="Link to Ontario Electronic Stewardship" role="link">
                         Proud Supporter of
                         <img src="images/OESLogo.png" alt="Proud Supporter of Ontario Electronic Stewardship"/>
                     </a>
                 </li>
             </ul>
         </section>
-        <section id="content">
-            <h2>Welcome, and thank you for visiting Georgian Bay Software!</h2>
+        <section id="content" aria-label="contentHeading">
+            <h2 id="contentHeading">Welcome, and thank you for visiting Georgian Bay Software!</h2>
             <p>We provide Information Technology services to small and medium sized business, government and educational centres. With our Computer, Networking, Software and Web expertise, you need not look any further than Georgian Bay Software</p>
-            <img src="images/readers_choice.jpg" title="The deck is stacked in your favour, when you call Georgian Bay Software" alt="Card table with Reader's Choice Awards as cards." />
-            <h3>Voted Parry Sound's Best Computer Store 2007 through 2016!</h3>
+            <img src="images/readers_choice.jpg" aria-labelledby="rcAwardsHeading" title="The deck is stacked in your favour, when you call Georgian Bay Software" alt="Card table with Reader's Choice Awards as cards." />
+            <h3 id="rcAwardsHeading">Voted Parry Sound's Best Computer Store 2007 through 2016!</h3>
             <p>Thanks to everyone for their support.</p>
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p><small>Copyright © 2014 Georgian Bay Software | All Rights Reserved</small></p>
     </footer>
 </body>
