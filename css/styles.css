@@ -1,4 +1,113 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     max-width: 780px;
     margin: 0 auto;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 5% 5%;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: 5px solid blue;
+    border-radius: 0 0 0 25%;
+}
+
+header > a {
+    flex-basis: 20%;
+}
+
+header > a img {
+    height: 135px;
+    width: auto;
+}
+
+#midRightHeader {
+    flex-basis: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#topHalf {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 5px solid blue;
+}
+
+#topHalf p {
+    flex-basis: 20%;
+}
+
+#titleDesc {
+    flex-basis: 80%;
+}
+
+#midRightHeader nav {
+    flex-basis: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul a {
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+    color: blue;
+    padding: 10px;
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a:hover {
+    color: red;
+}
+
+#storeHours {
+    flex-basis: 15%;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#partners {
+    flex-basis: 30%;
+}
+
+#partners ul img {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+#content {
+    flex-basis: 70%;
+    
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
 }
